@@ -1,38 +1,57 @@
-.App {
-  text-align: center;
+#root, :root, html, body {
+    --blue: hsl(200, 25%, 35%);
+    --light-blue: hsl(185, 40%, 85%);
+
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    box-sizing: border-box;
+    background-color: var(--light-blue);
+    color: var(--blue);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.counter {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.button-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
 }
+.button {
+    border: 1.5px solid var(--blue);
+    border-radius: 100px;
+    background-color: hsla(0, 0%, 0%, 0);
+    padding: 7px 15px 10px 15px;
+    margin: 1vmin;
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+    font-family: 'Poiret One', sans-serif;
+    font-size: calc(1rem + 1vmin);
+    color: var(--blue);
+
+    cursor: pointer;
 }
-
-.App-link {
-  color: #61dafb;
+.adjust-button {
+    width: 50px;
+    height: 50px;
+    padding-top: 2px;
+    font-size: 2.5rem;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.secondary-button {
+    border: none;
+    padding-top: 5px;
+    margin: 0;
+    text-decoration: underline;
+    font-size: calc(0.75rem + 1vmin);
+    color: var(--blue);
+}
+.number {
+    font-family: 'Poiret One', sans-serif;
+    font-size: calc(10rem + 10vmin);
+    margin: 0;
 }
