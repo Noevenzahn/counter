@@ -35,6 +35,11 @@
     color: var(--blue);
 
     cursor: pointer;
+    transition: all 200ms ease-in-out;
+}
+.button:hover {
+    background-color: var(--blue);
+    color: var(--light-blue);
 }
 .adjust-button {
     width: 50px;
@@ -42,13 +47,16 @@
     padding-top: 2px;
     font-size: 2.5rem;
 }
-.secondary-button {
+.clear-button {
     border: none;
     padding-top: 5px;
     margin: 0;
     text-decoration: underline;
+    background-color: hsla(0, 0%, 0%, 0);
     font-size: calc(0.75rem + 1vmin);
     color: var(--blue);
+    font-family: 'Poiret One', sans-serif;
+    cursor: pointer;
 }
 .number {
     font-family: 'Poiret One', sans-serif;

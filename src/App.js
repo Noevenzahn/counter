@@ -28,7 +28,7 @@ function App() {
                 +</button>
             </div>
             <button 
-                className="button secondary-button" 
+                className="clear-button" 
                 onClick={() => setCount(0)}>
             clear</button>
         </div>
