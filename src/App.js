@@ -39,6 +39,3 @@ function App() {
 
 
 export default App;
-
-// random number 
-// + 10, +100, +1000 usw
