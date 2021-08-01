@@ -2,4 +2,4 @@
 
 # Working with numbers?
 
-To dive deeper in creating React Apps from scratch I created this simple PWA, useful if you need to count something or need a random number.
+To dive deeper into creating React Apps from scratch, I created this simple PWA, useful if you need to count something or need a random number.
